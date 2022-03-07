@@ -17,7 +17,7 @@
       chocolatey.chocolatey.win_chocolatey:
         name: "{{ choco_packages }}"
         state: "{{ state }}"
-        source: https://HYSDWV-00CHO001.eng.homebox.com:8443/repository/ChocolateyInternal/
+       # source: https://HYSDWV-00CHO001.eng.homebox.com:8443/repository/ChocolateyInternal/
 
     - name: Disable Community Repo
       chocolatey.chocolatey.win_chocolatey:
