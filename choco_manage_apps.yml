@@ -14,13 +14,13 @@
 
   tasks:
     - name: install or remove packages
-      win_chocolatey:
+      chocolatey.chocolatey.win_chocolatey:
         name: "{{ choco_packages }}"
         state: "{{ state }}"
         source: https://HYSDWV-00CHO001.eng.homebox.com:8443/repository/ChocolateyInternal/
 
     - name: Disable Community Repo
-      win_chocolatey:
+      chocolatey.chocolatey.win_chocolatey:
         name: chocolatey
         state: disabled
 
