@@ -2,6 +2,8 @@
 - name: "Chocolatey Install / Remove Packages"
   hosts: all
   become: yes
+  collections:
+    - chocolatey.chocolatey
   #become_method: runas
   #become_user: eng\mpeadmin
   #become_flags: logon_type=interactive logon_flags=with_profile
