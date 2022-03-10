@@ -1,0 +1,4 @@
+collections:
+  - name: https://github.com/chocolatey/chocolatey-ansible.git
+    type: git
+    version: master
